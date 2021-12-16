@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   get 'new_user/new'
-  get 'new_user/create'
+  post 'new_user/create'
   resources :users, only: [:new, :create, :show] 
-  
+
   get 'users/new'
   get 'users/create'
   get 'users/show'
